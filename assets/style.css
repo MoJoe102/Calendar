@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
   color: black;
   line-height: 1;
@@ -21,7 +21,7 @@ textarea{
   text-align: center;
   background-color: transparent;
   color: rgba(247, 43, 43, 0.979);
-  border-radius: 0;
+  border-radius: 2;
   border-bottom: 10px solid black;
 
 }
@@ -40,13 +40,13 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px green;
+  border-top: 5px green;
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: #af9b9b;
+  border-top: 5px solid #000000;
   background-color: green;
 }
 .save-icon {
@@ -58,14 +58,14 @@ textarea{
 }
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: #06AED5;
   color: white;
 }
 
 .hover {
-  background-color: orange;
+  background-color: rgb(136, 126, 109);
 }
 
 .past {
@@ -74,12 +74,12 @@ textarea{
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: #61cdff;
+  color: rgb(180, 68, 68);
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #cc7715af;
   color: white;
 }
 

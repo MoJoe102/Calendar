@@ -1,6 +1,6 @@
 
 //  DEFINE VARIABLES
-// HH format for a 24hr clock
+//  The actual format for a 24hr clock
 let currentTime = moment().format("HH");
 // parse the current time so we can compare it with another number later
 let currentTimeInt = parseInt(currentTime);
@@ -12,15 +12,15 @@ $(document).ready(function () {
     renderPlans();
 
 
-    //  ADD CURRENT DATE AT THE TOP OF THE PAGE
+    //  This will add the current date
 
-    // set variable to the current day. Formatting info found at https://momentjs.com/docs/
+    // variable set to the current day. Formatting info found at https://momentjs.com/docs/
     let currentDay = moment().format("dddd, MMMM Do");
     // set the text of the p tag as the current day
     $("#currentDay").text(currentDay);
 
     // THIS WILL set the data attributes to the hour input element
-    // *** Note later we will change the class on that element based on whether the represented time is > or < the current time.
+    // *** Note later we will change the class on defined element based on whether the represented time is > and / or < the current time.
     $("#9Row").attr("data-time", moment("9:00 am", "h:mm a").format("HH"));
     $("#10Row").attr("data-time", moment("10:00 am", "h:mm a").format("HH"));
     $("#11Row").attr("data-time", moment("11:00 am", "h:mm a").format("HH"));
